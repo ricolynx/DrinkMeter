@@ -27,10 +27,21 @@ namespace DrinkMeter
 		{
 			// create a new window instance based on the screen size
 			window = new UIWindow (UIScreen.MainScreen.Bounds);
-			
-			// If you have defined a view, add it here:
-			// window.AddSubview (navigationController.View);
-			
+
+			//-> Instanciate the navigation controller
+			var rootNavigationController = new UINavigationController();
+
+			rootNavigationController.NavigationBar.TintColor = UIColor.Black;
+
+			//-> Instanciate the Home window
+			HomeScreen homeScreen = new HomeScreen();
+
+			//-> add home view to controller
+			rootNavigationController.PushViewController(homeScreen,false);
+
+			//-> associate the rootNavigationControler to the window
+			this.window.RootViewController = rootNavigationController;
+
 			// make the window visible
 			window.MakeKeyAndVisible ();
 			

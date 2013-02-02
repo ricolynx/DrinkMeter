@@ -82,9 +82,11 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="monotouch" />
+    <Reference Include="MonoTouch.Dialog-1" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Views\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -92,6 +94,28 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="Views\HomeScreen.cs" />
+    <Compile Include="Views\HomeScreen.designer.cs">
+      <DependentUpon>HomeScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SettingsScreen.cs" />
+    <Compile Include="Views\SettingsScreen.designer.cs">
+      <DependentUpon>SettingsScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CheckInScreen.cs" />
+    <Compile Include="Views\CheckInScreen.designer.cs">
+      <DependentUpon>CheckInScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReportScreen.cs" />
+    <Compile Include="Views\ReportScreen.designer.cs">
+      <DependentUpon>ReportScreen.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <InterfaceDefinition Include="Views\HomeScreen.xib" />
+    <InterfaceDefinition Include="Views\SettingsScreen.xib" />
+    <InterfaceDefinition Include="Views\CheckInScreen.xib" />
+    <InterfaceDefinition Include="Views\ReportScreen.xib" />
+  </ItemGroup>
 </Project>

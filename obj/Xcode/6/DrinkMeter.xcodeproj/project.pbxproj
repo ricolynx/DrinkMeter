@@ -1,0 +1,262 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3CD6FE000000000000000000 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5893D6800000000000000000 /* UIKit.framework */; };
+		E9A074800000000000000000 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 211A25800000000000000000 /* MapKit.framework */; };
+		9669EB000000000000000000 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE39C000000000000000000 /* Foundation.framework */; };
+		5EF03A000000000000000000 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AAD12800000000000000000 /* CoreGraphics.framework */; };
+		B1F209000000000000000000 /* HomeScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E96BBA000000000000000000 /* HomeScreen.xib */; };
+		5EBB7F800000000000000000 /* SettingsScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 963530800000000000000000 /* SettingsScreen.xib */; };
+		B84F60000000000000000000 /* CheckInScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2741CE800000000000000000 /* CheckInScreen.xib */; };
+		B84E6C800000000000000000 /* ReportScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFC81D800000000000000000 /* ReportScreen.xib */; };
+		6517E3000000000000000000 /* AppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 80D4BB800000000000000000 /* AppDelegate.h */; };
+		A2EDF7800000000000000000 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA67A8800000000000000000 /* AppDelegate.m */; };
+		4FB76E000000000000000000 /* HomeScreen.h in Sources */ = {isa = PBXBuildFile; fileRef = 6B7446800000000000000000 /* HomeScreen.h */; };
+		FC80E4800000000000000000 /* HomeScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 183DBD000000000000000000 /* HomeScreen.m */; };
+		A94A5B000000000000000000 /* SettingsScreen.h in Sources */ = {isa = PBXBuildFile; fileRef = C50733800000000000000000 /* SettingsScreen.h */; };
+		1E9A20800000000000000000 /* SettingsScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A56F9000000000000000000 /* SettingsScreen.m */; };
+		CB6397000000000000000000 /* CheckInScreen.h in Sources */ = {isa = PBXBuildFile; fileRef = E7206F800000000000000000 /* CheckInScreen.h */; };
+		5C7035000000000000000000 /* CheckInScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 782D0D800000000000000000 /* CheckInScreen.m */; };
+		939AB8000000000000000000 /* ReportScreen.h in Sources */ = {isa = PBXBuildFile; fileRef = 40B35C800000000000000000 /* ReportScreen.h */; };
+		9A4649800000000000000000 /* ReportScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = B60322000000000000000000 /* ReportScreen.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FF00E9800000000000000000 /* DrinkMeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "DrinkMeter.app"; path = "DrinkMeter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5893D6800000000000000000 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "UIKit.framework"; path = "System/Library/Frameworks/UIKit.framework"; sourceTree = SDKROOT; };
+		211A25800000000000000000 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "MapKit.framework"; path = "System/Library/Frameworks/MapKit.framework"; sourceTree = SDKROOT; };
+		CDE39C000000000000000000 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Foundation.framework"; path = "System/Library/Frameworks/Foundation.framework"; sourceTree = SDKROOT; };
+		7AAD12800000000000000000 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreGraphics.framework"; path = "System/Library/Frameworks/CoreGraphics.framework"; sourceTree = SDKROOT; };
+		E96BBA000000000000000000 /* HomeScreen.xib */ = {isa = PBXFileReference; name = "HomeScreen.xib"; path = "Views/HomeScreen.xib"; sourceTree = "<group>"; };
+		963530800000000000000000 /* SettingsScreen.xib */ = {isa = PBXFileReference; name = "SettingsScreen.xib"; path = "Views/SettingsScreen.xib"; sourceTree = "<group>"; };
+		2741CE800000000000000000 /* CheckInScreen.xib */ = {isa = PBXFileReference; name = "CheckInScreen.xib"; path = "Views/CheckInScreen.xib"; sourceTree = "<group>"; };
+		EFC81D800000000000000000 /* ReportScreen.xib */ = {isa = PBXFileReference; name = "ReportScreen.xib"; path = "Views/ReportScreen.xib"; sourceTree = "<group>"; };
+		80D4BB800000000000000000 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AppDelegate.h"; path = "AppDelegate.h"; sourceTree = "<group>"; };
+		DA67A8800000000000000000 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate.m"; path = "AppDelegate.m"; sourceTree = "<group>"; };
+		6B7446800000000000000000 /* HomeScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "HomeScreen.h"; path = "HomeScreen.h"; sourceTree = "<group>"; };
+		183DBD000000000000000000 /* HomeScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "HomeScreen.m"; path = "HomeScreen.m"; sourceTree = "<group>"; };
+		C50733800000000000000000 /* SettingsScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SettingsScreen.h"; path = "SettingsScreen.h"; sourceTree = "<group>"; };
+		3A56F9000000000000000000 /* SettingsScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "SettingsScreen.m"; path = "SettingsScreen.m"; sourceTree = "<group>"; };
+		E7206F800000000000000000 /* CheckInScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CheckInScreen.h"; path = "CheckInScreen.h"; sourceTree = "<group>"; };
+		782D0D800000000000000000 /* CheckInScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CheckInScreen.m"; path = "CheckInScreen.m"; sourceTree = "<group>"; };
+		40B35C800000000000000000 /* ReportScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ReportScreen.h"; path = "ReportScreen.h"; sourceTree = "<group>"; };
+		B60322000000000000000000 /* ReportScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "ReportScreen.m"; path = "ReportScreen.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		89B124000000000000000000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CD6FE000000000000000000 /* UIKit.framework in Frameworks */,
+				E9A074800000000000000000 /* MapKit.framework in Frameworks */,
+				9669EB000000000000000000 /* Foundation.framework in Frameworks */,
+				5EF03A000000000000000000 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F48E35800000000000000000 = {
+			isa = PBXGroup;
+			children = (
+				7AA7DB000000000000000000 /* DrinkMeter */,
+				EE31D2000000000000000000 /* Frameworks */,
+				B13EA4C00000000000000000 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B13EA4C00000000000000000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF00E9800000000000000000 /* DrinkMeter.app */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		EE31D2000000000000000000 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5893D6800000000000000000 /* UIKit.framework */,
+				211A25800000000000000000 /* MapKit.framework */,
+				CDE39C000000000000000000 /* Foundation.framework */,
+				7AAD12800000000000000000 /* CoreGraphics.framework */,
+			);
+			name = "Frameworks";
+			sourceTree = "<group>";
+		};
+		7AA7DB000000000000000000 /* DrinkMeter */ = {
+			isa = PBXGroup;
+			children = (
+				80D4BB800000000000000000 /* AppDelegate.h */,
+				E7206F800000000000000000 /* CheckInScreen.h */,
+				6B7446800000000000000000 /* HomeScreen.h */,
+				40B35C800000000000000000 /* ReportScreen.h */,
+				C50733800000000000000000 /* SettingsScreen.h */,
+				FBCFB6C00000000000000000 /* Supporting Files */,
+				4BD80E800000000000000000 /* Views */,
+			);
+			name = "DrinkMeter";
+			sourceTree = "<group>";
+		};
+		4BD80E800000000000000000 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2741CE800000000000000000 /* CheckInScreen.xib */,
+				E96BBA000000000000000000 /* HomeScreen.xib */,
+				EFC81D800000000000000000 /* ReportScreen.xib */,
+				963530800000000000000000 /* SettingsScreen.xib */,
+			);
+			name = "Views";
+			sourceTree = "<group>";
+		};
+		FBCFB6C00000000000000000 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA67A8800000000000000000 /* AppDelegate.m */,
+				782D0D800000000000000000 /* CheckInScreen.m */,
+				183DBD000000000000000000 /* HomeScreen.m */,
+				B60322000000000000000000 /* ReportScreen.m */,
+				3A56F9000000000000000000 /* SettingsScreen.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		707E37C00000000000000000 /* DrinkMeter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A3ADB800000000000000000 /* Build configuration list for PBXNativeTarget "DrinkMeter" */;
+			buildPhases = (
+				523773000000000000000000 /* Sources */,
+				89B124000000000000000000 /* Frameworks */,
+				6DF44B800000000000000000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DrinkMeter";
+			productName = "DrinkMeter";
+			productReference = FF00E9800000000000000000 /* DrinkMeter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		683BED000000000000000000 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = B6FBFA400000000000000000 /* Build configuration list for PBXProject "DrinkMeter" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F48E35800000000000000000;
+			productRefGroup = B13EA4C00000000000000000 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				707E37C00000000000000000 /* DrinkMeter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6DF44B800000000000000000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1F209000000000000000000 /* HomeScreen.xib in Resources */,
+				5EBB7F800000000000000000 /* SettingsScreen.xib in Resources */,
+				B84F60000000000000000000 /* CheckInScreen.xib in Resources */,
+				B84E6C800000000000000000 /* ReportScreen.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		523773000000000000000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6517E3000000000000000000 /* AppDelegate.h in Sources */,
+				A2EDF7800000000000000000 /* AppDelegate.m in Sources */,
+				4FB76E000000000000000000 /* HomeScreen.h in Sources */,
+				FC80E4800000000000000000 /* HomeScreen.m in Sources */,
+				A94A5B000000000000000000 /* SettingsScreen.h in Sources */,
+				1E9A20800000000000000000 /* SettingsScreen.m in Sources */,
+				CB6397000000000000000000 /* CheckInScreen.h in Sources */,
+				5C7035000000000000000000 /* CheckInScreen.m in Sources */,
+				939AB8000000000000000000 /* ReportScreen.h in Sources */,
+				9A4649800000000000000000 /* ReportScreen.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7450AF000000000000000000 /* MonoTouch */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+			};
+			name = MonoTouch;
+		};
+		C78738800000000000000000 /* MonoTouch */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				PRODUCT_NAME = "DrinkMeter";
+				WRAPPER_EXTENSION = app;
+			};
+			name = MonoTouch;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6FBFA400000000000000000 /* Build configuration list for PBXProject "DrinkMeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7450AF000000000000000000 /* MonoTouch */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = MonoTouch;
+		};
+		5A3ADB800000000000000000 /* Build configuration list for PBXNativeTarget "DrinkMeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C78738800000000000000000 /* MonoTouch */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = MonoTouch;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 683BED000000000000000000 /* Project object */;
+}
