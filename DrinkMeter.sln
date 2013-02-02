@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrinkMeter", "DrinkMeter.csproj", "{FF03EDD4-D86D-4CFC-B727-68440D356C15}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF03EDD4-D86D-4CFC-B727-68440D356C15}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{FF03EDD4-D86D-4CFC-B727-68440D356C15}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{FF03EDD4-D86D-4CFC-B727-68440D356C15}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{FF03EDD4-D86D-4CFC-B727-68440D356C15}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{FF03EDD4-D86D-4CFC-B727-68440D356C15}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{FF03EDD4-D86D-4CFC-B727-68440D356C15}.Debug|iPhone.Build.0 = Debug|iPhone
+		{FF03EDD4-D86D-4CFC-B727-68440D356C15}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{FF03EDD4-D86D-4CFC-B727-68440D356C15}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{FF03EDD4-D86D-4CFC-B727-68440D356C15}.Release|iPhone.ActiveCfg = Release|iPhone
+		{FF03EDD4-D86D-4CFC-B727-68440D356C15}.Release|iPhone.Build.0 = Release|iPhone
+		{FF03EDD4-D86D-4CFC-B727-68440D356C15}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{FF03EDD4-D86D-4CFC-B727-68440D356C15}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = DrinkMeter.csproj
+	EndGlobalSection
+EndGlobal
