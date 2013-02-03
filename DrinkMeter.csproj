@@ -87,6 +87,9 @@
   <ItemGroup>
     <Folder Include="Resources\" />
     <Folder Include="Views\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Assets\" />
+    <Folder Include="Assets\loc\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -110,6 +113,7 @@
     <Compile Include="Views\ReportScreen.designer.cs">
       <DependentUpon>ReportScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\LocalisationManager.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -117,5 +121,9 @@
     <InterfaceDefinition Include="Views\SettingsScreen.xib" />
     <InterfaceDefinition Include="Views\CheckInScreen.xib" />
     <InterfaceDefinition Include="Views\ReportScreen.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\loc\loc_en.txt" />
+    <Content Include="Assets\loc\loc_fr.txt" />
   </ItemGroup>
 </Project>

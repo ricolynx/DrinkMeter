@@ -1,0 +1,6 @@
+btn_checkin	Check-In
+screen_checkin_title	Check-In !
+btn_reports	Rapports
+screen_reports_title	Rapports
+btn_settings	Paramètres
+screen_settings_title	Paramètres
