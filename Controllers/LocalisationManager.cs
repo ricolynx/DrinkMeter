@@ -38,27 +38,30 @@ namespace DrinkMeter
 		public void initLocale (string newLocale)
 		{
 			//clean or initialise dictionary
-			if (localisations != null)
-				localisations.Clear ();
-			else 
+			if (localisations == null)
 				localisations = new Dictionary<string, string> ();
 
-			//-->load and process file 
-			string filePath  = String.Format ("{0}/loc_{1}.txt", localFolder, newLocale);
-			if (File.Exists (filePath)) 
+			lock(localisations)
 			{
-				using (StreamReader strReader = new StreamReader(filePath)) 
+				localisations.Clear ();
+
+				//-->load and process file 
+				string filePath = String.Format ("{0}/loc_{1}.txt", localFolder, newLocale);
+				if (File.Exists (filePath)) 
 				{
-					string line;
-					while((line = strReader.ReadLine())!=null)
+					using (StreamReader strReader = new StreamReader(filePath)) 
 					{
-						addEntry(line);
+						string line;
+						while ((line = strReader.ReadLine())!=null) 
+						{
+							addEntry (line);
+						}
 					}
+				} 
+				else 
+				{
+					throw new Exception (String.Format ("localisation file {0}/loc_{1}.txt does not exists", localFolder, newLocale));
 				}
-			} 
-			else 
-			{
-				throw new Exception(String.Format("localisation file {0}/loc_{1}.txt does not exists",localFolder, newLocale));
 			}
 		}
 
@@ -68,11 +71,14 @@ namespace DrinkMeter
 		/// <param name="value">Value.</param>
 		protected void addEntry (string value)
 		{
+
 			var tabIndex = value.IndexOf ("\t");
 			if (tabIndex == -1) 
 				return;
-
-			localisations.Add(value.Substring(0,tabIndex),value.Substring(tabIndex+1));
+			lock (localisations) 
+			{
+				localisations.Add (value.Substring (0, tabIndex), value.Substring (tabIndex + 1));
+			}
 		}
 
 		/// <summary>
@@ -94,10 +100,13 @@ namespace DrinkMeter
 		/// <param name="key">Key.</param>
 		public string getText (string key)
 		{
-			if (localisations == null || localisations.ContainsKey(key))
-				return key;
+			lock (localisations) 
+			{
+				if (localisations == null || localisations.ContainsKey (key))
+					return key;
 
-			return localisations[key];
+				return localisations [key];
+			}
 		}
 
 	}
