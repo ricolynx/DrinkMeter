@@ -9,9 +9,12 @@ namespace DrinkMeter
 {
 	public partial class SettingsScreen : UIViewController
 	{
+		private AppDelegate appDelegate;
+
 		public SettingsScreen () : base ("SettingsScreen", null)
 		{
-			this.Title = "Settings";
+			appDelegate = (UIApplication.SharedApplication.Delegate as AppDelegate);
+			this.Title = appDelegate.localisationManager.getText("screen_settings_title");
 		}
 		
 		public override void DidReceiveMemoryWarning ()

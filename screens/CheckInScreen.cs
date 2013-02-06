@@ -9,9 +9,13 @@ namespace DrinkMeter
 {
 	public partial class CheckInScreen : UIViewController
 	{
+
+		private AppDelegate appDelegate;
+
 		public CheckInScreen () : base ("CheckInScreen", null)
 		{
-			this.Title = "Check-in";
+			appDelegate = (UIApplication.SharedApplication.Delegate as AppDelegate);
+			this.Title = appDelegate.localisationManager.getText("screen_checkin_title");
 		}
 		
 		public override void DidReceiveMemoryWarning ()

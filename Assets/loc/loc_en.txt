@@ -1,3 +1,4 @@
+screen_home_title	Drink Meter
 btn_checkin	Check-In
 screen_checkin_title	Check-In !
 btn_reports	Reports

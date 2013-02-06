@@ -102,7 +102,7 @@ namespace DrinkMeter
 		{
 			lock (localisations) 
 			{
-				if (localisations == null || localisations.ContainsKey (key))
+				if (localisations == null || !localisations.ContainsKey (key))
 					return key;
 
 				return localisations [key];

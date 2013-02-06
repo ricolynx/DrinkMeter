@@ -9,9 +9,13 @@ namespace DrinkMeter
 {
 	public partial class ReportScreen : UIViewController
 	{
+
+		private AppDelegate appDelegate;
+
 		public ReportScreen () : base ("ReportScreen", null)
 		{
-			this.Title = "Reports"; 
+			appDelegate = (UIApplication.SharedApplication.Delegate as AppDelegate);
+			this.Title = appDelegate.localisationManager.getText("screen_reports_title"); 
 		}
 		
 		public override void DidReceiveMemoryWarning ()

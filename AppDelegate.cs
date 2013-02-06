@@ -16,7 +16,7 @@ namespace DrinkMeter
 		// class-level declarations
 		UIWindow window;
 
-		LocalisationManager localisationManager;
+		public LocalisationManager localisationManager;
 
 		//
 		// This method is invoked when the application has loaded and is ready to run. In this 
@@ -29,7 +29,7 @@ namespace DrinkMeter
 		{
 			//initialise localisation controller
 			localisationManager = new LocalisationManager("./Assets/loc");
-			localisationManager.initLocale("en");
+			localisationManager.initLocale("fr");
 
 			// create a new window instance based on the screen size
 			window = new UIWindow (UIScreen.MainScreen.Bounds);

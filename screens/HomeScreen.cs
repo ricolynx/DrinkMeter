@@ -10,6 +10,8 @@ namespace DrinkMeter
 	public partial class HomeScreen : UIViewController
 	{
 
+		private AppDelegate appDelegate;
+
 		CheckInScreen checkInScreen;
 		ReportScreen reportScreen;
 		SettingsScreen settingsScreen;
@@ -17,6 +19,10 @@ namespace DrinkMeter
 
 		public HomeScreen () : base ("HomeScreen", null)
 		{
+			appDelegate = (UIApplication.SharedApplication.Delegate as AppDelegate);
+			this.Title = appDelegate.localisationManager.getText("screen_home_title");
+
+
 		}
 		
 		public override void DidReceiveMemoryWarning ()
@@ -30,6 +36,10 @@ namespace DrinkMeter
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
+
+			btnCheckIn.SetTitle(appDelegate.localisationManager.getText("btn_checkin"),UIControlState.Normal);
+			btnReports.SetTitle(appDelegate.localisationManager.getText("btn_reports"),UIControlState.Normal);
+			btnSettings.SetTitle(appDelegate.localisationManager.getText("btn_settings"),UIControlState.Normal);
 
 			//-> add listener on btn checkin
 			this.btnCheckIn.TouchUpInside += (sender, e) => 
