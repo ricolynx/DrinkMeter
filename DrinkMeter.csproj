@@ -128,8 +128,11 @@
     <Content Include="Assets\loc\loc_fr.txt" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Assets\images\btn_chekin.png" />
-    <BundleResource Include="Assets\images\btn_params.png" />
-    <BundleResource Include="Assets\images\btn_reports.png" />
+    <BundleResource Include="Assets\images\btn_checkin-en.png" />
+    <BundleResource Include="Assets\images\btn_checkin-fr.png" />
+    <BundleResource Include="Assets\images\btn_params-en.png" />
+    <BundleResource Include="Assets\images\btn_params-fr.png" />
+    <BundleResource Include="Assets\images\btn_reports-en.png" />
+    <BundleResource Include="Assets\images\btn_reports-fr.png" />
   </ItemGroup>
 </Project>

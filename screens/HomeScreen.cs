@@ -35,22 +35,24 @@ namespace DrinkMeter
 		{
 			base.ViewDidLoad ();
 
+
+			//set buttons design :
 			RectangleF rect;
 			UIImage image;
 
-			image = new UIImage ("./Assets/images/btn_chekin.png");
+			image = new UIImage ("./Assets/images/btn_checkin-"+appDelegate.localisationManager.locale+".png");
 			rect = btnCheckIn.Frame;
 			rect.Size = image.Size;
 			btnCheckIn.Frame = rect;
 			btnCheckIn.SetBackgroundImage (image,UIControlState.Normal);
 
-			image = new UIImage ("./Assets/images/btn_reports.png");
+			image = new UIImage ("./Assets/images/btn_reports-"+appDelegate.localisationManager.locale+".png");
 			rect = btnReports.Frame;
 			rect.Size = image.Size;
 			btnReports.Frame = rect;
 			btnReports.SetBackgroundImage (image,UIControlState.Normal);
 
-			image = new UIImage ("./Assets/images/btn_params.png");
+			image = new UIImage ("./Assets/images/btn_params-"+appDelegate.localisationManager.locale+".png");
 			rect = btnSettings.Frame;
 			rect.Size = image.Size;
 			btnSettings.Frame = rect;
