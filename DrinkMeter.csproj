@@ -90,6 +90,7 @@
     <Folder Include="Assets\" />
     <Folder Include="Assets\loc\" />
     <Folder Include="screens\" />
+    <Folder Include="Assets\images\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -125,5 +126,10 @@
   <ItemGroup>
     <Content Include="Assets\loc\loc_en.txt" />
     <Content Include="Assets\loc\loc_fr.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Assets\images\btn_chekin.png" />
+    <BundleResource Include="Assets\images\btn_params.png" />
+    <BundleResource Include="Assets\images\btn_reports.png" />
   </ItemGroup>
 </Project>

@@ -21,8 +21,6 @@ namespace DrinkMeter
 		{
 			appDelegate = (UIApplication.SharedApplication.Delegate as AppDelegate);
 			this.Title = appDelegate.localisationManager.getText("screen_home_title");
-
-
 		}
 		
 		public override void DidReceiveMemoryWarning ()
@@ -37,9 +35,28 @@ namespace DrinkMeter
 		{
 			base.ViewDidLoad ();
 
-			btnCheckIn.SetTitle(appDelegate.localisationManager.getText("btn_checkin"),UIControlState.Normal);
-			btnReports.SetTitle(appDelegate.localisationManager.getText("btn_reports"),UIControlState.Normal);
-			btnSettings.SetTitle(appDelegate.localisationManager.getText("btn_settings"),UIControlState.Normal);
+			RectangleF rect;
+			UIImage image;
+
+			image = new UIImage ("./Assets/images/btn_chekin.png");
+			rect = btnCheckIn.Frame;
+			rect.Size = image.Size;
+			btnCheckIn.Frame = rect;
+			btnCheckIn.SetBackgroundImage (image,UIControlState.Normal);
+
+			image = new UIImage ("./Assets/images/btn_reports.png");
+			rect = btnReports.Frame;
+			rect.Size = image.Size;
+			btnReports.Frame = rect;
+			btnReports.SetBackgroundImage (image,UIControlState.Normal);
+
+			image = new UIImage ("./Assets/images/btn_params.png");
+			rect = btnSettings.Frame;
+			rect.Size = image.Size;
+			btnSettings.Frame = rect;
+			btnSettings.SetBackgroundImage (image,UIControlState.Normal);
+
+
 
 			//-> add listener on btn checkin
 			this.btnCheckIn.TouchUpInside += (sender, e) => 
