@@ -91,6 +91,7 @@
     <Folder Include="Assets\loc\" />
     <Folder Include="screens\" />
     <Folder Include="Assets\images\" />
+    <Folder Include="Model\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -115,6 +116,9 @@
     <Compile Include="screens\ReportScreen.designer.cs">
       <DependentUpon>ReportScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\UserDrinkModel.cs" />
+    <Compile Include="Model\DrinkRecordModel.cs" />
+    <Compile Include="Controllers\UserDrinkRecordsController.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
