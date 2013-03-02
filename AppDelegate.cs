@@ -35,7 +35,15 @@ namespace DrinkMeter
 
 			//initialize user drink record controller
 			userDrinkRecordsController = new UserDrinkRecordsController ();
+
+			//userDrinkRecordsController.resetAllData ();
+
 			userDrinkRecordsController.loadUserDrinkModel ();
+
+			userDrinkRecordsController.addNewDrinkRecord (DateTime.Now,1);
+			userDrinkRecordsController.addNewDrinkRecord (DateTime.Now,1);
+
+			Console.WriteLine ("total" + userDrinkRecordsController.getTotalUserDrinkVolume().ToString());
 
 
 			// create a new window instance based on the screen size
